@@ -60,20 +60,67 @@
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open class="main-button" type="button">Заказать услугу</button>
-          <div data-modal class="back-drop is-hidden">
-            <div class="modal">
+          <div data-modal class="back-drop">
+            <form class="modal">
+              <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
               <button class="modal-close-btn" data-modal-close type="button">
-                <svg class="modal-svg" height="18px" width="18px">
+                <svg class="modal-close-svg" height="18px" width="18px">
                   <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
               </button>
-            </div>
+              <label class="modal-label">
+                <span class="modal-label-text">Имя</span>
+                <div class="modal-contact-wrapper">
+                  <input class="modal-contact-field" name="user-name" type="text" />
+                  <svg class="modal-contact-svg" width="12" height="12">
+                    <use href="./images/sprite.svg#user-form-logo"></use>
+                  </svg>
+                </div>
+              </label>
+              <label class="modal-label">
+                <span class="modal-label-text">Телефон</span>
+                <div class="modal-contact-wrapper">
+                  <input class="modal-contact-field" name="user-tel" type="tel" />
+                  <svg class="modal-contact-svg" width="13" height="13">
+                    <use href="./images/sprite.svg#tel-form-logo"></use>
+                  </svg>
+                </div>
+              </label>
+              <label class="modal-label">
+                <span class="modal-label-text">Почта</span>
+                <div class="modal-contact-wrapper">
+                  <input class="modal-contact-field" name="user-email" type="email" />
+                  <svg class="modal-contact-svg" width="15" height="12">
+                    <use href="./images/sprite.svg#email-form-logo"></use>
+                  </svg>
+                </div>
+              </label>
+              <label class="modal-label">
+                <span class="modal-label-text">Комментарий</span>
+                <textarea
+                  class="modal-contact-area modal-contact-field"
+                  name="user-comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+              <div class="policy-checkbox-wrapper">
+                <input
+                  class="visually-hidden policy-checkbox"
+                  type="checkbox"
+                  id="policy-checkbox"
+                />
+                <label class="policy-checkbox-label" for="policy-checkbox">
+                  Соглашаюсь с рассылкой и принимаю&nbsp;<a class="policy-link link" href="">Условия договора</a>
+                </label>
+              </div>
+              <button class="main-button" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
       <section class="advantages section">
         <div class="container">
-          <h2 class="visually-hidden title">Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <!--тег спрятан-->
           <ul class="card-set list">
             <li class="card-set-item">
