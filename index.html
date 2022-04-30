@@ -60,7 +60,7 @@
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open class="main-button" type="button">Заказать услугу</button>
-          <div data-modal class="back-drop">
+          <div data-modal class="back-drop is-hidden">
             <form class="modal">
               <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
               <button class="modal-close-btn" data-modal-close type="button">
@@ -71,7 +71,7 @@
               <label class="modal-label">
                 <span class="modal-label-text">Имя</span>
                 <div class="modal-contact-wrapper">
-                  <input class="modal-contact-field" name="user-name" type="text" />
+                  <input class="modal-contact-field" required name="user-name" type="text" />
                   <svg class="modal-contact-svg" width="12" height="12">
                     <use href="./images/sprite.svg#user-form-logo"></use>
                   </svg>
@@ -80,7 +80,7 @@
               <label class="modal-label">
                 <span class="modal-label-text">Телефон</span>
                 <div class="modal-contact-wrapper">
-                  <input class="modal-contact-field" name="user-tel" type="tel" />
+                  <input class="modal-contact-field" required name="user-tel" type="tel" />
                   <svg class="modal-contact-svg" width="13" height="13">
                     <use href="./images/sprite.svg#tel-form-logo"></use>
                   </svg>
@@ -89,7 +89,7 @@
               <label class="modal-label">
                 <span class="modal-label-text">Почта</span>
                 <div class="modal-contact-wrapper">
-                  <input class="modal-contact-field" name="user-email" type="email" />
+                  <input class="modal-contact-field" required name="user-email" type="email" />
                   <svg class="modal-contact-svg" width="15" height="12">
                     <use href="./images/sprite.svg#email-form-logo"></use>
                   </svg>
@@ -107,6 +107,8 @@
                 <input
                   class="visually-hidden policy-checkbox"
                   type="checkbox"
+                  required
+                  name="policy-agreement"
                   id="policy-checkbox"
                 />
                 <label class="policy-checkbox-label" for="policy-checkbox">
@@ -508,7 +510,7 @@
     </main>
     <footer class="footer">
       <div class="footer-container container">
-        <div class="footer-item">
+        <div class="footer-address">
           <a class="logo-footer logo link" href="" lang="en"
             >Web<span class="logo-white">Studio</span></a
           >
@@ -537,7 +539,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-item footer-links">
+        <div class="footer-links">
           <h3 class="footer-title">Присоединяйтесь</h3>
           <ul class="soc-links-list list">
             <li class="soc-link-item">
@@ -590,7 +592,7 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        <form>
           <label>
             <h3 class="footer-title">Подпишитесь на рассылку</h3>
             <input class="footer-input" placeholder="E-mail" name="user-email" type="email" />

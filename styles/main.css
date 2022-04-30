@@ -307,7 +307,10 @@ address {
   display: flex;
   align-items: baseline;
 }
-.footer-item:not(:last-child) {
+.footer-links {
+  margin-right: auto;
+}
+.footer-address {
   margin-right: 70px;
 }
 address {
@@ -363,6 +366,9 @@ address {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+.footer-input:placeholder-shown {
+  font-size: 16px;
 }
 .subscribe-button {
   display: flex;
@@ -572,6 +578,9 @@ address {
   outline: none;
   transition: border-color var(--transition-main);
 }
+.modal-contact-field:placeholder-shown {
+  letter-spacing: 0.01em;
+}
 .modal-contact-field:focus {
   border-color: var(--primary-brand-color);
 }
@@ -621,6 +630,10 @@ address {
   border-radius: 2px;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color var(--transition-main), border-color var(--transition-main);
+}
+.policy-checkbox:focus + .policy-checkbox-label::before{
+  border-color: var(--primary-brand-color);
 }
 .policy-checkbox:checked + .policy-checkbox-label::before {
   background-color: var(--primary-brand-color);
